@@ -65,7 +65,19 @@ namespace LearnerBay.Controllers
             return View();
         }
 
-        public IActionResult Blog()
+        public IActionResult BlogGrid()
+        {
+            
+
+            return View();
+        }
+        public IActionResult BlogClassic()
+        {
+            
+
+            return View();
+        }
+        public IActionResult BlogSingle()
         {
             
 
