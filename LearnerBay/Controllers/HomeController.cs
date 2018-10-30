@@ -52,7 +52,13 @@ namespace LearnerBay.Controllers
 
             return View();
         }
-        public IActionResult Gallery()
+        public IActionResult GalleryThreeColumn()
+        {
+            
+
+            return View();
+        }
+        public IActionResult GalleryFullWidth()
         {
             
 
