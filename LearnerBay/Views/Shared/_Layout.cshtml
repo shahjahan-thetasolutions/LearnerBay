@@ -3,11 +3,28 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - LearnerBay</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <title>Rochester - Driving School HTML Template | Home Style One</title>
+
 
     <environment include="Development">
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-        <link rel="stylesheet" href="~/css/site.css" />
+        <!-- Stylesheets -->
+        <link href="~/css/bootstrap.css" rel="stylesheet">
+        <link href="~/css/revolution-slider.css" rel="stylesheet">
+        <link href="~/css/style.css" rel="stylesheet">
+        <link href="~/css/jquery-ui.css" rel="stylesheet">
+        <!--Favicon-->
+        <link rel="shortcut icon" href="~/images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="~/images/favicon.ico" type="image/x-icon">
+        <!-- Responsive -->
+
+        <link href="~/css/responsive.css" rel="stylesheet">
+        <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+        <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+
+
+
     </environment>
     <environment exclude="Development">
         <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -17,41 +34,590 @@
     </environment>
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">LearnerBay</a>
+    <div class="page-wrapper">
+
+        <!-- Preloader -->
+        <div class="preloader"></div>
+
+        <!-- Main Header-->
+        <header class="main-header header-style-two">
+
+            <!--Header-Upper-->
+            <div class="header-upper">
+                <div class="auto-container">
+                    <div class="clearfix">
+
+                        <div class="pull-left logo-outer">
+                            <div class="logo"><a href="index.html"><img src="images/logo.png" alt="" title=""></a></div>
+                        </div>
+
+                        <div class="pull-right upper-right clearfix">
+
+                            <!--Info Box-->
+                            <div class="info-box">
+                                <div class="icon-box"><span class="flaticon-pin"></span></div>
+                                <ul>
+                                    <li>Collins Street West,121 <br> King Street, Melbourne.</li>
+                                </ul>
+                            </div>
+
+                            <!--Info Box-->
+                            <div class="info-box">
+                                <div class="icon-box"><span class="flaticon-technology-3"></span></div>
+                                <ul>
+                                    <li>+(11)123 456 7890,</li>
+                                </ul>
+                            </div>
+
+                            <!--Info Box-->
+                            <div class="info-box">
+                                <div class="icon-box"><span class="flaticon-e-mail-envelope"></span></div>
+                                <ul>
+                                    <li>Info@drivingschool.com</li>
+                                </ul>
+                            </div>
+
+                            <!--Info Box-->
+                            <div class="info-box search-btn-box">
+
+                                <!--Search Box-->
+                                <div class="search-box-outer">
+                                    <div class="dropdown">
+                                        <button class="search-box-btn dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="fa fa-search"></span></button>
+                                        <ul class="dropdown-menu pull-right search-panel" aria-labelledby="dropdownMenu3">
+                                            <li class="panel-outer">
+                                                <div class="form-container">
+                                                    <form method="post" action="blog.html">
+                                                        <div class="form-group">
+                                                            <input type="search" name="field-name" value="" placeholder="Search Here" required="">
+                                                            <button type="submit" class="search-btn"><span class="fa fa-search"></span></button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
-                </ul>
-                <partial name="_LoginPartial" />
+            <!--End Header Upper-->
+            <!--Header Lower-->
+            <div class="header-lower">
+                <div class="auto-container">
+                    <div class="nav-outer clearfix">
+                        <!-- Main Menu -->
+                        <nav class="main-menu">
+                            <div class="navbar-header">
+                                <!-- Toggle Button -->
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+
+                            <div class="navbar-collapse collapse clearfix">
+                                <ul class="navigation clearfix">
+                                    <li class="current dropdown">
+                                        <a href="#">Home</a>
+                                        <ul>
+                                            <li><a href="index.html">Homepage One</a></li>
+                                            <li><a href="index-2.html">Homepage Two</a></li>
+                                            <li><a href="index-3.html">Homepage Three</a></li>
+                                            <li class="dropdown">
+                                                <a href="#">Header Styles</a>
+                                                <ul>
+                                                    <li><a href="index.html">Header Style One</a></li>
+                                                    <li><a href="index-2.html">Header Style Two</a></li>
+                                                    <li><a href="index-3.html">Header Style Three</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#">About Us</a>
+                                        <ul>
+                                            <li><a href="about.html">About Type 01</a></li>
+                                            <li><a href="about-two.html">About Type 02</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#">INSTRUCTORS</a>
+                                        <ul>
+                                            <li><a href="instructor.html">Instructor</a></li>
+                                            <li><a href="instructor-detail.html">Instructor Detail</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#">Pages</a>
+                                        <ul>
+                                            <li><a href="features.html">Features</a></li>
+                                            <li><a href="price.html">Pricing</a></li>
+                                            <li><a href="error-page.html">404 Page</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#">Gallery</a>
+                                        <ul>
+                                            <li><a href="gallery.html">Gallery Three Column</a></li>
+                                            <li><a href="gallery-fullwidth.html">Gallery Full Width</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="dropdown">
+                                        <a href="#">Blog</a>
+                                        <ul>
+                                            <li><a href="blog-grid.html">Blog Grid View</a></li>
+                                            <li><a href="blog-classic.html">Blog Classic View</a></li>
+                                            <li><a href="blog-single.html">Blog Single</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <!--Social Option-->
+                        <div class="social-box">
+                            <ul class="social-links-three">
+                                <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                                <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                                <li><a href="#"><span class="fa fa-pinterest-p"></span></a></li>
+                                <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!--End Header Lower-->
+            <!--Sticky Header-->
+            <div class="sticky-header">
+                <div class="auto-container clearfix">
+                    <!--Logo-->
+                    <div class="logo pull-left">
+                        <a href="index.html" class="img-responsive"><img src="images/logo-small.png" alt="" title=""></a>
+                    </div>
+
+                    <!--Right Col-->
+                    <div class="right-col pull-right">
+                        <!-- Main Menu -->
+                        <nav class="main-menu">
+                            <div class="navbar-header">
+                                <!-- Toggle Button -->
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+
+                            <div class="navbar-collapse collapse clearfix">
+                                <ul class="navigation clearfix">
+                                    <li class="current dropdown">
+                                        <a href="#">Home</a>
+                                        <ul>
+                                            <li><a href="index.html">Homepage One</a></li>
+                                            <li><a href="index-2.html">Homepage Two</a></li>
+                                            <li><a href="index-3.html">Homepage Three</a></li>
+                                            <li class="dropdown">
+                                                <a href="#">Header Styles</a>
+                                                <ul>
+                                                    <li><a href="index.html">Header Style One</a></li>
+                                                    <li><a href="index-2.html">Header Style Two</a></li>
+                                                    <li><a href="index-3.html">Header Style Three</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#">About Us</a>
+                                        <ul>
+                                            <li><a href="about.html">About Type 01</a></li>
+                                            <li><a href="about-two.html">About Type 02</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#">INSTRUCTORS</a>
+                                        <ul>
+                                            <li><a href="instructor.html">Instructor</a></li>
+                                            <li><a href="instructor-detail.html">Instructor Detail</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#">Pages</a>
+                                        <ul>
+                                            <li><a href="features.html">Features</a></li>
+                                            <li><a href="price.html">Pricing</a></li>
+                                            <li><a href="error-page.html">404 Page</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#">Gallery</a>
+                                        <ul>
+                                            <li><a href="gallery.html">Gallery Three Column</a></li>
+                                            <li><a href="gallery-fullwidth.html">Gallery Full Width</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="dropdown">
+                                        <a href="#">Blog</a>
+                                        <ul>
+                                            <li><a href="blog-grid.html">Blog Grid View</a></li>
+                                            <li><a href="blog-classic.html">Blog Classic View</a></li>
+                                            <li><a href="blog-single.html">Blog Single</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <!-- Main Menu End-->
+                    </div>
+
+                </div>
+            </div>
+            <!--End Sticky Header-->
+
+        </header>
+        <!--End Main Header -->
+        <!--Main Slider-->
+        <section class="main-slider" data-start-height="800" data-slide-overlay="yes">
+
+            <div class="tp-banner-container">
+                <div class="tp-banner">
+                    <ul>
+
+
+                        <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="images/main-slider/image-2.jpg" data-saveperformance="off" data-title="Awesome Title Here">
+                            <img src="images/main-slider/image-2.jpg" alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+
+                            <div class="tp-caption sfl sfb tp-resizeme"
+                                 data-x="left" data-hoffset="15"
+                                 data-y="center" data-voffset="-70"
+                                 data-speed="1500"
+                                 data-start="0"
+                                 data-easing="easeOutExpo"
+                                 data-splitin="none"
+                                 data-splitout="none"
+                                 data-elementdelay="0.01"
+                                 data-endelementdelay="0.3"
+                                 data-endspeed="1200"
+                                 data-endeasing="Power4.easeIn"><h3>Best for you</h3></div>
+
+                            <div class="tp-caption sfl sfb tp-resizeme"
+                                 data-x="left" data-hoffset="15"
+                                 data-y="center" data-voffset="-20"
+                                 data-speed="1500"
+                                 data-start="500"
+                                 data-easing="easeOutExpo"
+                                 data-splitin="none"
+                                 data-splitout="none"
+                                 data-elementdelay="0.01"
+                                 data-endelementdelay="0.3"
+                                 data-endspeed="1200"
+                                 data-endeasing="Power4.easeIn"><h2>Drive Safe & Get License</h2></div>
+
+                            <div class="tp-caption sfl sfb tp-resizeme"
+                                 data-x="left" data-hoffset="15"
+                                 data-y="center" data-voffset="40"
+                                 data-speed="1500"
+                                 data-start="1000"
+                                 data-easing="easeOutExpo"
+                                 data-splitin="none"
+                                 data-splitout="none"
+                                 data-elementdelay="0.01"
+                                 data-endelementdelay="0.3"
+                                 data-endspeed="1200"
+                                 data-endeasing="Power4.easeIn"><div class="normal-text">Lorem ipsum dolLorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Sed ultrices ipsum nonltrices ipsum non</div></div>
+
+                            <div class="tp-caption sfl sfb tp-resizeme"
+                                 data-x="left" data-hoffset="15"
+                                 data-y="center" data-voffset="110"
+                                 data-speed="1500"
+                                 data-start="1500"
+                                 data-easing="easeOutExpo"
+                                 data-splitin="none"
+                                 data-splitout="none"
+                                 data-elementdelay="0.01"
+                                 data-endelementdelay="0.3"
+                                 data-endspeed="1200"
+                                 data-endeasing="Power4.easeIn"><a href="services.html" class="theme-btn btn-style-one">Read More</a>&nbsp; &nbsp;<a href="#" class="theme-btn btn-style-two">see Pricing</a></div>
+
+                        </li>
+
+                        <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="images/main-slider/image-3.jpg" data-saveperformance="off" data-title="Awesome Title Here">
+                            <img src="images/main-slider/image-3.jpg" alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+
+                            <div class="tp-caption sft sfb tp-resizeme"
+                                 data-x="center" data-hoffset="0"
+                                 data-y="center" data-voffset="-70"
+                                 data-speed="1500"
+                                 data-start="0"
+                                 data-easing="easeOutExpo"
+                                 data-splitin="none"
+                                 data-splitout="none"
+                                 data-elementdelay="0.01"
+                                 data-endelementdelay="0.3"
+                                 data-endspeed="1200"
+                                 data-endeasing="Power4.easeIn"><h3>Best for you</h3></div>
+
+                            <div class="tp-caption sft sfb tp-resizeme"
+                                 data-x="center" data-hoffset="0"
+                                 data-y="center" data-voffset="-20"
+                                 data-speed="1500"
+                                 data-start="500"
+                                 data-easing="easeOutExpo"
+                                 data-splitin="none"
+                                 data-splitout="none"
+                                 data-elementdelay="0.01"
+                                 data-endelementdelay="0.3"
+                                 data-endspeed="1200"
+                                 data-endeasing="Power4.easeIn"><h2>make a sucessful drive with us!</h2></div>
+
+                            <div class="tp-caption sfb sfb tp-resizeme"
+                                 data-x="center" data-hoffset="0"
+                                 data-y="center" data-voffset="40"
+                                 data-speed="1500"
+                                 data-start="1000"
+                                 data-easing="easeOutExpo"
+                                 data-splitin="none"
+                                 data-splitout="none"
+                                 data-elementdelay="0.01"
+                                 data-endelementdelay="0.3"
+                                 data-endspeed="1200"
+                                 data-endeasing="Power4.easeIn"><div class="normal-text text-center">Lorem ipsum dolLorem ipsum dolor sit amet, consectetur adipiscing elit <br> dolLorem ipsum dolor sit amet, consectetur adipiscin.</div></div>
+
+                            <div class="tp-caption sfb sfb tp-resizeme"
+                                 data-x="center" data-hoffset="0"
+                                 data-y="center" data-voffset="110"
+                                 data-speed="1500"
+                                 data-start="1500"
+                                 data-easing="easeOutExpo"
+                                 data-splitin="none"
+                                 data-splitout="none"
+                                 data-elementdelay="0.01"
+                                 data-endelementdelay="0.3"
+                                 data-endspeed="1200"
+                                 data-endeasing="Power4.easeIn"><a href="services.html" class="theme-btn btn-style-one">Read More</a>&nbsp; &nbsp;<a href="#" class="theme-btn btn-style-two">see Pricing</a></div>
+
+                        </li>
+
+                        <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="images/main-slider/image-1.jpg" data-saveperformance="off" data-title="Awesome Title Here">
+                            <img src="images/main-slider/image-1.jpg" alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+
+                            <div class="tp-caption sfl sfb tp-resizeme"
+                                 data-x="left" data-hoffset="15"
+                                 data-y="center" data-voffset="-80"
+                                 data-speed="1500"
+                                 data-start="0"
+                                 data-easing="easeOutExpo"
+                                 data-splitin="none"
+                                 data-splitout="none"
+                                 data-elementdelay="0.01"
+                                 data-endelementdelay="0.3"
+                                 data-endspeed="1200"
+                                 data-endeasing="Power4.easeIn"><h4>welcome to our driving school</h4></div>
+
+                            <div class="tp-caption sfl sfb tp-resizeme"
+                                 data-x="left" data-hoffset="15"
+                                 data-y="center" data-voffset="-10"
+                                 data-speed="1500"
+                                 data-start="500"
+                                 data-easing="easeOutExpo"
+                                 data-splitin="none"
+                                 data-splitout="none"
+                                 data-elementdelay="0.01"
+                                 data-endelementdelay="0.3"
+                                 data-endspeed="1200"
+                                 data-endeasing="Power4.easeIn"><h2>WE ARE FOCUSED ON YOUR <br> SUCCESS</h2></div>
+
+                            <div class="tp-caption sfl sfb tp-resizeme"
+                                 data-x="left" data-hoffset="15"
+                                 data-y="center" data-voffset="70"
+                                 data-speed="1500"
+                                 data-start="1000"
+                                 data-easing="easeOutExpo"
+                                 data-splitin="none"
+                                 data-splitout="none"
+                                 data-elementdelay="0.01"
+                                 data-endelementdelay="0.3"
+                                 data-endspeed="1200"
+                                 data-endeasing="Power4.easeIn"><div class="normal-text">Lorem ipsum dolLorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Sed ultrices ipsum nonltrices ipsum non</div></div>
+
+                            <div class="tp-caption sfl sfb tp-resizeme"
+                                 data-x="left" data-hoffset="15"
+                                 data-y="center" data-voffset="140"
+                                 data-speed="1500"
+                                 data-start="1500"
+                                 data-easing="easeOutExpo"
+                                 data-splitin="none"
+                                 data-splitout="none"
+                                 data-elementdelay="0.01"
+                                 data-endelementdelay="0.3"
+                                 data-endspeed="1200"
+                                 data-endeasing="Power4.easeIn"><a href="services.html" class="theme-btn btn-style-one">Read More</a>&nbsp; &nbsp;<a href="#" class="theme-btn btn-style-two">see Pricing</a></div>
+
+                        </li>
+
+                    </ul>
+
+                    <div class="tp-bannertimer"></div>
+                </div>
+            </div>
+
+        </section>
+        <!--End Main Slider-->
+
+
+   
+            @RenderBody()
+            <hr />
+
+            <!--Main Footer-->
+            <footer class="main-footer">
+                <!--Widgets Section-->
+                <div class="widgets-section">
+                    <div class="auto-container">
+                        <div class="row clearfix">
+                            <!--Big Column-->
+                            <div class="big-column col-md-6 col-sm-12 col-xs-12">
+                                <div class="row clearfix">
+
+                                    <!--Footer Column-->
+                                    <div class="footer-column col-md-6 col-sm-6 col-xs-12">
+                                        <!--About Widget-->
+                                        <div class="footer-widget about-widget">
+                                            <div class="footer-logo">
+                                                <a href="index.html"><img src="images/logo-2.png" alt="" /></a>
+                                            </div>
+                                            <div class="widget-content">
+                                                <div class="bold-text">Our School Specialists!</div>
+                                                <div class="text">Aorem ipsum dolor sit amet elit sed lum tempor incididunt ut labore el dolore alg minim veniam quis nostrud lorem psum dolor sit amet sed incididunt.</div>
+                                                <a href="#" class="read-more">Read More...</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--Footer Column-->
+                                    <div class="footer-column col-md-6 col-sm-6 col-xs-12">
+                                        <!--Gallery Widget-->
+                                        <div class="footer-widget gallery-widget">
+                                            <h2>Our Gallery</h2>
+                                            <div class="widget-content">
+                                                <div class="images-outer clearfix">
+                                                    <!--Image Box-->
+                                                    <figure class="image-box"><a href="images/gallery/1.jpg" class="lightbox-image" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-thumb-1.jpg" alt=""></a></figure>
+                                                    <!--Image Box-->
+                                                    <figure class="image-box"><a href="images/gallery/2.jpg" class="lightbox-image" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-thumb-2.jpg" alt=""></a></figure>
+                                                    <!--Image Box-->
+                                                    <figure class="image-box"><a href="images/gallery/3.jpg" class="lightbox-image" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-thumb-3.jpg" alt=""></a></figure>
+                                                    <!--Image Box-->
+                                                    <figure class="image-box"><a href="images/gallery/4.jpg" class="lightbox-image" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-thumb-4.jpg" alt=""></a></figure>
+                                                    <!--Image Box-->
+                                                    <figure class="image-box"><a href="images/gallery/1.jpg" class="lightbox-image" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-thumb-5.jpg" alt=""></a></figure>
+                                                    <!--Image Box-->
+                                                    <figure class="image-box"><a href="images/gallery/2.jpg" class="lightbox-image" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-thumb-6.jpg" alt=""></a></figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!--Big Column-->
+                            <div class="big-column col-md-6 col-sm-12 col-xs-12">
+                                <div class="row clearfix">
+
+                                    <!--Footer Column-->
+                                    <div class="footer-column col-md-6 col-sm-6 col-xs-12">
+                                        <!--Info Widget-->
+                                        <div class="footer-widget info-widget">
+                                            <h2>Keep in Touch</h2>
+                                            <div class="widget-content">
+                                                <ul class="list-style-one">
+                                                    <li><span class="icon flaticon-location-pin"></span>Collins Street West,121 <br> King Street, Melbourne.</li>
+                                                    <li><span class="icon flaticon-technology-3"></span>+(11)123 456 7890, </li>
+                                                    <li><span class="icon flaticon-interface"></span>info@drivingschool.com</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--Footer Column-->
+                                    <div class="footer-column col-md-6 col-sm-6 col-xs-12">
+                                        <div class="footer-widget subscribe-widget">
+                                            <h2>News letter</h2>
+                                            <div class="widget-content">
+                                                <div class="newsletter-form">
+                                                    <form method="post" action="contact.html">
+                                                        <div class="form-group">
+                                                            <input type="text" name="name" value="" placeholder="Name *" required="">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input type="email" name="email" value="" placeholder="Email Id" required="">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <button type="submit" class="theme-btn btn-style-one">SUBSCRIBE</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--Footer Bottom-->
+                <div class="footer-bottom">
+                    <div class="auto-container">
+                        <div class="row clearfix">
+                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                <div class="copyright">&copy; Copyright 2017 DrivingSchool | All Rights Reserved</div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 col-xs-12">
+                                <ul class="social-links-two">
+                                    <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                                    <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                                    <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                                    <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!--End Main Footer-->
         </div>
-    </nav>
-
-    <partial name="_CookieConsentPartial" />
-
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; 2018 - LearnerBay</p>
-        </footer>
-    </div>
-
+  
+    <!--Scroll to top-->
+    <div class="scroll-to-top scroll-to-target" data-target=".main-header"><span class="icon fa fa-long-arrow-up"></span></div>
     <environment include="Development">
-        <script src="~/lib/jquery/dist/jquery.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+
+        <script src="~/js/jquery.js"></script>
+        <script src="~/js/bootstrap.min.js"></script>
+        <script src="~/js/revolution.min.js"></script>
+        <script src="~/js/jquery.fancybox.pack.js"></script>
+        <script src="~/js/jquery.fancybox-media.js"></script>
+        <script src="~/js/owl.js"></script>
+        <script src="~/js/appear.js"></script>
+        <script src="~/js/wow.js"></script>
+        <script src="~/js/jquery-ui.js"></script>
+        <script src="~/js/jquery.datetimepicker.js"></script>
+        <script src="~/js/script.js"></script>
+
+
+
+
         <script src="~/js/site.js" asp-append-version="true"></script>
     </environment>
     <environment exclude="Development">
