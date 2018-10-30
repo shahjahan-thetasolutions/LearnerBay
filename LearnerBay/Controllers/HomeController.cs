@@ -21,19 +21,47 @@ namespace LearnerBay.Controllers
 
             return View();
         }
+        public IActionResult Instructor()
+        {
+            
 
-        public IActionResult Contact()
+            return View();
+        }
+        public IActionResult InstructorDetail()
+        {
+            
+
+            return View();
+        }
+
+        public IActionResult Pages()
+        {
+            
+
+            return View();
+        }
+        public IActionResult Gallery()
+        {
+            
+
+            return View();
+        }
+
+        public IActionResult Blog()
+        {
+            
+
+            return View();
+        }
+
+        public IActionResult ContactUs()
         {
             ViewData["Message"] = "Your contact page.";
 
             return View();
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
+      
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
