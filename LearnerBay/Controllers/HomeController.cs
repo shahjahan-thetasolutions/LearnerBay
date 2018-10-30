@@ -34,7 +34,19 @@ namespace LearnerBay.Controllers
             return View();
         }
 
-        public IActionResult Pages()
+        public IActionResult Features()
+        {
+            
+
+            return View();
+        }
+        public IActionResult Price()
+        {
+            
+
+            return View();
+        }
+        public IActionResult ErrorPage()
         {
             
 
