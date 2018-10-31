@@ -1,0 +1,78 @@
+
+
+
+
+
+
+.yellow_wrapper{position: relative;}
+
+.yellow_inner{position: relative; background: #ffd200;}
+
+.yellow_inner .txt1{font-weight: 200; text-transform: uppercase;color: #000; font-size: 36px; line-height: 40px; padding-top: 40px; padding-bottom: 20px;}
+.yellow_inner .txt2{font-weight: 400; text-transform: uppercase;color: #000; font-size: 14px; line-height: 22px; padding-top: 0px; padding-bottom: 20px;}
+.yellow_inner .car1{position: relative; margin-bottom: -100px; padding-top: 20px;}
+
+
+
+.span6 {
+    width: 570px;
+    float: left;
+}
+    .px1{height: 70px; background: url(../images/px1.jpg) 0 0 repeat-x;}
+
+.px1 {
+  -webkit-animation: wave-animation 10.7s infinite linear; /* Safari 4+ */
+  -moz-animation:    wave-animation 10.7s infinite linear; /* Fx 5+ */
+  -o-animation:      wave-animation 10.7s infinite linear; /* Opera 12+ */
+  animation:         wave-animation 10.7s infinite linear; /* IE 10+ */
+}
+
+.px2{height: 70px; background: url(../images/px2.jpg) 0 0 repeat-x;}
+
+.px2 {
+  -webkit-animation: wave-animation 10.7s infinite linear; /* Safari 4+ */
+  -moz-animation:    wave-animation 10.7s infinite linear; /* Fx 5+ */
+  -o-animation:      wave-animation 10.7s infinite linear; /* Opera 12+ */
+  animation:         wave-animation 10.7s infinite linear; /* IE 10+ */
+}
+
+.px3{height: 49px; background: url(../images/px1.jpg) 0 0 repeat-x;}
+
+.px3 {
+  -webkit-animation: wave-animation 10.7s infinite linear; /* Safari 4+ */
+  -moz-animation:    wave-animation 10.7s infinite linear; /* Fx 5+ */
+  -o-animation:      wave-animation 10.7s infinite linear; /* Opera 12+ */
+  animation:         wave-animation 10.7s infinite linear; /* IE 10+ */
+}
+
+/* ============================= animation ====================== */
+@-webkit-keyframes wave-animation {
+  0%   { background-position: 0 0; }
+  100% { background-position: -912px 0; }
+}
+@-moz-keyframes wave-animation {
+  0%   { background-position: 0 0; }
+  100% { background-position: -912px 0; }
+}
+@-o-keyframes wave-animation {
+  0%   { background-position: 0 0; }
+  100% { background-position: -912px 0; }
+}
+@keyframes wave-animation {
+  0%   { background-position: 0 0; }
+  100% { background-position: -912px 0; }
+}
+/* ============================= animation end ====================== */
+
+
+
+
+
+
+
+
+
+
+
+	.container{width: 1170px;}
+
