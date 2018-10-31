@@ -17,7 +17,7 @@ namespace LearnerBay.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            
 
             return View();
         }
@@ -83,13 +83,7 @@ namespace LearnerBay.Controllers
 
             return View();
         }
-        public IActionResult ContactUs()
-        {
-            
-
-            return View();
-        }
-
+      
         public IActionResult Contact()
         {
            

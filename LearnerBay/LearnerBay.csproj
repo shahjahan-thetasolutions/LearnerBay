@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net471</TargetFramework>
+    <TargetFramework>net47</TargetFramework>
     <DebugType>full</DebugType>
     <UserSecretsId>aspnet-LearnerBay-0FABD204-E5A3-439E-B0F7-9E1F801CD97F</UserSecretsId>
   </PropertyGroup>
@@ -24,9 +24,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Update="Views\Shared\_OFFLayout - Copy.cshtml">
-      <Pack>$(IncludeRazorContentInPack)</Pack>
-    </Content>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+    </None>
   </ItemGroup>
 
 </Project>

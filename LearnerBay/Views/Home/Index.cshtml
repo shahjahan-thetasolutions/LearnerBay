@@ -4,6 +4,7 @@
 
 }
 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,6 +15,7 @@
     <link href="~/css/revolution-slider.css" rel="stylesheet">
     <link href="~/css/style.css" rel="stylesheet">
     <link href="~/css/jquery-ui.css" rel="stylesheet">
+    <link href="~/css/site.css" rel="stylesheet" />
     <!--Favicon-->
     <link rel="shortcut icon" href="~/images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="~/images/favicon.ico" type="image/x-icon">
@@ -21,8 +23,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <link href="~/css/responsive.css" rel="stylesheet">
+
     <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="~/js/respond.js"></script><![endif]-->
 </head>
 
 <body>
@@ -40,7 +43,7 @@
                     <div class="clearfix">
 
                         <div class="pull-left logo-outer">
-                            <div class="logo"><a href="index.html"><img src="images/logo.png" alt="" title=""></a></div>
+                            <div class="logo"><a href="/home/index"><img src="~/images/leanersbay-logo.png" alt="" title=""></a></div>
                         </div>
 
                         <div class="pull-right upper-right clearfix">
@@ -116,9 +119,9 @@
 
                             <div class="navbar-collapse collapse clearfix">
                                 <ul class="navigation clearfix">
-                                    <li class="current dropdown">
-                                        <a href="#">Home</a>
-                                        <ul>
+                                    <li class="">
+                                        <a href="/home/index">Home</a>
+                                        @*<ul>
                                             <li><a href="index.html">Homepage One</a></li>
                                             <li><a href="index-2.html">Homepage Two</a></li>
                                             <li><a href="index-3.html">Homepage Three</a></li>
@@ -130,14 +133,14 @@
                                                     <li><a href="index-3.html">Header Style Three</a></li>
                                                 </ul>
                                             </li>
-                                        </ul>
+                                        </ul>*@
                                     </li>
-                                    <li class="dropdown">
-                                        <a href="#">About Us</a>
-                                        <ul>
+                                    <li class="">
+                                        <a href="/home/About">About Us</a>
+                                        @*<ul>
                                             <li><a href="about.html">About Type 01</a></li>
                                             <li><a href="about-two.html">About Type 02</a></li>
-                                        </ul>
+                                        </ul>*@
                                     </li>
                                     <li class="dropdown">
                                         <a href="#">INSTRUCTORS</a>
@@ -154,21 +157,21 @@
                                             <li><a href="/home/errorpage">404 Page</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown">
-                                        <a href="#">Gallery</a>
-                                        <ul>
+                                    <li class="">
+                                        <a href="/home/galleryfullwidth">Gallery</a>
+                                        @*<ul>
                                             <li><a href="/home/galleryThreeColumn">Gallery Three Column</a></li>
-                                            <li><a href="home/galleryfullwidth">Gallery Full Width</a></li>
-                                        </ul>
+                                            <li><a href="/home/galleryfullwidth">Gallery Full Width</a></li>
+                                        </ul>*@
                                     </li>
 
-                                    <li class="dropdown">
-                                        <a href="#">Blog</a>
-                                        <ul>
+                                    <li class="">
+                                        <a href="/home/bloggrid">Blog</a>
+                                        @*<ul>
                                             <li><a href="/home/bloggrid">Blog Grid View</a></li>
                                             <li><a href="/home/blogclassic">Blog Classic View</a></li>
                                             <li><a href="/home/blogsingle">Blog Single</a></li>
-                                        </ul>
+                                        </ul>*@
                                     </li>
                                     <li><a href="/home/contact">Contact Us</a></li>
                                 </ul>
@@ -192,7 +195,7 @@
                 <div class="auto-container clearfix">
                     <!--Logo-->
                     <div class="logo pull-left">
-                        <a href="index.html" class="img-responsive"><img src="~/images/logo-small.png" alt="" title=""></a>
+                        <a href="/home/index" class="img-responsive"><img src="~/images/logo-small.png" alt="" title=""></a>
                     </div>
 
                     <!--Right Col-->
@@ -211,8 +214,8 @@
                             <div class="navbar-collapse collapse clearfix">
                                 <ul class="navigation clearfix">
                                     <li class="current dropdown">
-                                        <a href="#">Home</a>
-                                        <ul>
+                                        <a href="/home/index">Home</a>
+                                        @*<ul>
                                             <li><a href="index.html">Homepage One</a></li>
                                             <li><a href="index-2.html">Homepage Two</a></li>
                                             <li><a href="index-3.html">Homepage Three</a></li>
@@ -224,14 +227,14 @@
                                                     <li><a href="index-3.html">Header Style Three</a></li>
                                                 </ul>
                                             </li>
-                                        </ul>
+                                        </ul>*@
                                     </li>
-                                    <li class="dropdown">
-                                        <a href="#">About Us</a>
-                                        <ul>
+                                    <li class="">
+                                        <a href="/home/About">About Us</a>
+                                        @*<ul>
                                             <li><a href="about.html">About Type 01</a></li>
                                             <li><a href="about-two.html">About Type 02</a></li>
-                                        </ul>
+                                        </ul>*@
                                     </li>
                                     <li class="dropdown">
                                         <a href="#">INSTRUCTORS</a>
@@ -248,23 +251,23 @@
                                             <li><a href="error-page.html">404 Page</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown">
-                                        <a href="#">Gallery</a>
-                                        <ul>
+                                    <li class="">
+                                        <a href="/home/GalleryFullWidth">Gallery</a>
+                                        @*<ul>
                                             <li><a href="gallery.html">Gallery Three Column</a></li>
                                             <li><a href="gallery-fullwidth.html">Gallery Full Width</a></li>
-                                        </ul>
+                                        </ul>*@
                                     </li>
 
-                                    <li class="dropdown">
-                                        <a href="#">Blog</a>
-                                        <ul>
+                                    <li class="">
+                                        <a href="/home/BlogGrid">Blog</a>
+                                        @*<ul>
                                             <li><a href="blog-grid.html">Blog Grid View</a></li>
                                             <li><a href="blog-classic.html">Blog Classic View</a></li>
                                             <li><a href="blog-single.html">Blog Single</a></li>
-                                        </ul>
+                                        </ul>*@
                                     </li>
-                                    <li><a href="contact.html">Contact Us</a></li>
+                                    <li><a href="contact">Contact Us</a></li>
                                 </ul>
                             </div>
                         </nav>
@@ -285,8 +288,8 @@
                     <ul>
 
 
-                        <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="images/main-slider/image-2.jpg" data-saveperformance="off" data-title="Awesome Title Here">
-                            <img src="images/main-slider/image-2.jpg" alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                        <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="~/images/main-slider/image-2.jpg" data-saveperformance="off" data-title="Awesome Title Here">
+                            <img src="~/images/main-slider/image-2.jpg" alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
 
                             <div class="tp-caption sfl sfb tp-resizeme"
                                  data-x="left" data-hoffset="15"
@@ -342,8 +345,8 @@
 
                         </li>
 
-                        <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="images/main-slider/image-3.jpg" data-saveperformance="off" data-title="Awesome Title Here">
-                            <img src="images/main-slider/image-3.jpg" alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                        <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="/images/main-slider/image-3.jpg" data-saveperformance="off" data-title="Awesome Title Here">
+                            <img src="~/images/main-slider/image-3.jpg" alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
 
                             <div class="tp-caption sft sfb tp-resizeme"
                                  data-x="center" data-hoffset="0"
@@ -399,8 +402,8 @@
 
                         </li>
 
-                        <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="images/main-slider/image-1.jpg" data-saveperformance="off" data-title="Awesome Title Here">
-                            <img src="images/main-slider/image-1.jpg" alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                        <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="/images/main-slider/image-1.jpg" data-saveperformance="off" data-title="Awesome Title Here">
+                            <img src="~/images/main-slider/image-1.jpg" alt="" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
 
                             <div class="tp-caption sfl sfb tp-resizeme"
                                  data-x="left" data-hoffset="15"
@@ -495,7 +498,7 @@
                     <!--Image Column-->
                     <div class="image-column col-md-6 col-sm-12 col-xs-12">
                         <div class="image wow slideInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
-                            <img src="images/resource/why-us.png" alt="" />
+                            <img src="~/images/resource/why-us.png" alt="" />
                         </div>
                     </div>
                 </div>
@@ -542,9 +545,9 @@
         <section class="fullwidth-section-three">
             <div class="outer-box clearfix">
                 <!--Image Column-->
-                <div class="image-column" style="background-image:url(images/resource/fullwith-3.jpg);">
+                <div class="image-column" style="background-image:url('@Url.Content("~/images/resource/fullwith-3.jpg")');">
                     <div class="image-box">
-                        <img src="images/resource/fullwith-3.jpg" alt="" />
+                        <img src="~/images/resource/fullwith-3.jpg" alt="" />
                     </div>
                 </div>
                 <!--Services Column-->
@@ -828,7 +831,7 @@
                 <div class="gallery-block">
                     <div class="inner-box">
                         <div class="image-box">
-                            <img src="images/gallery/1.jpg" alt="">
+                            <img src="~/images/gallery/1.jpg" alt="">
                             <div class="overlay-box">
                                 <div class="content">
                                     <a class="lightbox-image" href="images/gallery/1.jpg" title="Image Title Here"><span class="icon flaticon-plus"></span></a>
@@ -842,7 +845,7 @@
                 <div class="gallery-block">
                     <div class="inner-box">
                         <div class="image-box">
-                            <img src="images/gallery/2.jpg" alt="">
+                            <img src="~/images/gallery/2.jpg" alt="">
                             <div class="overlay-box">
                                 <div class="content">
                                     <a class="lightbox-image" href="images/gallery/2.jpg" title="Image Title Here"><span class="icon flaticon-plus"></span></a>
@@ -856,10 +859,10 @@
                 <div class="gallery-block">
                     <div class="inner-box">
                         <div class="image-box">
-                            <img src="images/gallery/3.jpg" alt="">
+                            <img src="~/images/gallery/3.jpg" alt="">
                             <div class="overlay-box">
                                 <div class="content">
-                                    <a class="lightbox-image" href="images/gallery/3.jpg" title="Image Title Here"><span class="icon flaticon-plus"></span></a>
+                                    <a class="lightbox-image" href="~/images/gallery/3.jpg" title="Image Title Here"><span class="icon flaticon-plus"></span></a>
                                 </div>
                             </div>
                         </div>
@@ -870,10 +873,10 @@
                 <div class="gallery-block">
                     <div class="inner-box">
                         <div class="image-box">
-                            <img src="images/gallery/4.jpg" alt="">
+                            <img src="~/images/gallery/4.jpg" alt="">
                             <div class="overlay-box">
                                 <div class="content">
-                                    <a class="lightbox-image" href="images/gallery/4.jpg" title="Image Title Here"><span class="icon flaticon-plus"></span></a>
+                                    <a class="lightbox-image" href="~/images/gallery/4.jpg" title="Image Title Here"><span class="icon flaticon-plus"></span></a>
                                 </div>
                             </div>
                         </div>
@@ -883,7 +886,7 @@
             </div>
 
             <div class="text-center">
-                <a href="gallery-fullwidth.html" class="view-gallery">View Our Gallery &ensp;<span class="fa fa-long-arrow-right"></span></a>
+                <a href="~/gallery-fullwidth.html" class="view-gallery">View Our Gallery &ensp;<span class="fa fa-long-arrow-right"></span></a>
             </div>
 
         </section>
@@ -1074,9 +1077,9 @@
                     </div>
                 </div>
                 <!--Image Column-->
-                <div class="image-column" style="background-image:url(images/resource/fullwith-2.jpg);">
+                <div class="image-column" style="background-image:url('@Url.Content("~/images/resource/fullwith-2.jpg")');">
                     <div class="hidden-image">
-                        <img src="images/resource/fullwith-2.jpg" alt="" />
+                        <img src="~/images/resource/fullwith-2.jpg" alt="" />
                     </div>
                 </div>
 
@@ -1084,7 +1087,7 @@
         </section>
         <!--End Instructor Section Two-->
         <!--Fun Facts Section -->
-        <section class="fun-facts-section" style="background-image:url(images/background/1.jpg);">
+        <section class="fun-facts-section" style="background-image:url('@Url.Content("~/images/background/1.jpg")');">
             <div class="auto-container">
 
                 <div class="row clearfix">
@@ -1272,7 +1275,7 @@
                                 <div class="news-style-two col-md-6 col-sm-6 col-xs-12">
                                     <div class="inner-box">
                                         <div class="image">
-                                            <img src="images/resource/news-3.jpg" alt="" />
+                                            <img src="~/images/resource/news-3.jpg" alt="" />
                                             <div class="overlay-box">
                                                 <div class="date-box">27 <span> Feb</span></div>
                                                 <a href="blog-single.html" class="overlay-link"><span class="icon fa fa-link"></span></a>
@@ -1297,7 +1300,7 @@
                                 <div class="news-style-two col-md-6 col-sm-6 col-xs-12">
                                     <div class="inner-box">
                                         <div class="image">
-                                            <img src="images/resource/news-4.jpg" alt="" />
+                                            <img src="~/images/resource/news-4.jpg" alt="" />
                                             <div class="overlay-box">
                                                 <div class="date-box">27 <span> Feb</span></div>
                                                 <a href="blog-single.html" class="overlay-link"><span class="icon fa fa-link"></span></a>
@@ -1336,39 +1339,39 @@
                                 <div class="testimonial-block">
                                     <div class="inner">
                                         <div class="author-info">
-                                            <div class="author-image"><img src="images/resource/author-1.jpg" alt="" /></div>
+                                            <div class="author-image"><img src="~/images/resource/author-1.jpg" alt="" /></div>
                                             <h3>Benjamin Blanchard</h3>
                                             <div class="designation">( CEO & Founder OF School )</div>
                                             <div class="rating"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half-full"></span></div>
                                         </div>
                                         <div class="text">people who already have strong trust relshipasdzes with you akshay. this is photoshop’s version akshay lorad aem ipsuasdm. proin gravida nibh vel velit auctor aliquet. awho already have strong trust.people whcao already have ssatrong trust relships with you akshay. this is photoshop’s version akshaetsy lorem ipsum. proin gravida nibh vel velit auctor aliquet. this is photoshop’s version akshaetsy lorem ipsum. </div>
-                                        <div class="signature"><img src="images/resource/signature.png" alt="" /></div>
+                                        <div class="signature"><img src="~/images/resource/signature.png" alt="" /></div>
                                     </div>
                                 </div>
                                 <!--Testimonial Block-->
                                 <div class="testimonial-block">
                                     <div class="inner">
                                         <div class="author-info">
-                                            <div class="author-image"><img src="images/resource/author-1.jpg" alt="" /></div>
+                                            <div class="author-image"><img src="~/images/resource/author-1.jpg" alt="" /></div>
                                             <h3>Benjamin Blanchard</h3>
                                             <div class="designation">( CEO & Founder OF School )</div>
                                             <div class="rating"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half-full"></span></div>
                                         </div>
                                         <div class="text">people who already have strong trust relshipasdzes with you akshay. this is photoshop’s version akshay lorad aem ipsuasdm. proin gravida nibh vel velit auctor aliquet. awho already have strong trust.people whcao already have ssatrong trust relships with you akshay. this is photoshop’s version akshaetsy lorem ipsum. proin gravida nibh vel velit auctor aliquet. this is photoshop’s version akshaetsy lorem ipsum. </div>
-                                        <div class="signature"><img src="images/resource/signature.png" alt="" /></div>
+                                        <div class="signature"><img src="~/images/resource/signature.png" alt="" /></div>
                                     </div>
                                 </div>
                                 <!--Testimonial Block-->
                                 <div class="testimonial-block">
                                     <div class="inner">
                                         <div class="author-info">
-                                            <div class="author-image"><img src="images/resource/author-1.jpg" alt="" /></div>
+                                            <div class="author-image"><img src="~/images/resource/author-1.jpg" alt="" /></div>
                                             <h3>Benjamin Blanchard</h3>
                                             <div class="designation">( CEO & Founder OF School )</div>
                                             <div class="rating"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star-half-full"></span></div>
                                         </div>
                                         <div class="text">people who already have strong trust relshipasdzes with you akshay. this is photoshop’s version akshay lorad aem ipsuasdm. proin gravida nibh vel velit auctor aliquet. awho already have strong trust.people whcao already have ssatrong trust relships with you akshay. this is photoshop’s version akshaetsy lorem ipsum. proin gravida nibh vel velit auctor aliquet. this is photoshop’s version akshaetsy lorem ipsum. </div>
-                                        <div class="signature"><img src="images/resource/signature.png" alt="" /></div>
+                                        <div class="signature"><img src="~/images/resource/signature.png" alt="" /></div>
                                     </div>
                                 </div>
                             </div>
@@ -1394,7 +1397,7 @@
                                     <!--About Widget-->
                                     <div class="footer-widget about-widget">
                                         <div class="footer-logo">
-                                            <a href="index.html"><img src="images/logo-2.png" alt="" /></a>
+                                            <a href="index.html"><img src="~/images/logo-2.png" alt="" /></a>
                                         </div>
                                         <div class="widget-content">
                                             <div class="bold-text">Our School Specialists!</div>
@@ -1412,17 +1415,17 @@
                                         <div class="widget-content">
                                             <div class="images-outer clearfix">
                                                 <!--Image Box-->
-                                                <figure class="image-box"><a href="images/gallery/1.jpg" class="lightbox-image" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-thumb-1.jpg" alt=""></a></figure>
+                                                <figure class="image-box"><a href="~/images/gallery/1.jpg" class="lightbox-image" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="~/images/gallery/footer-thumb-1.jpg" alt=""></a></figure>
                                                 <!--Image Box-->
-                                                <figure class="image-box"><a href="images/gallery/2.jpg" class="lightbox-image" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-thumb-2.jpg" alt=""></a></figure>
+                                                <figure class="image-box"><a href="~/images/gallery/2.jpg" class="lightbox-image" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="~/images/gallery/footer-thumb-2.jpg" alt=""></a></figure>
                                                 <!--Image Box-->
-                                                <figure class="image-box"><a href="images/gallery/3.jpg" class="lightbox-image" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-thumb-3.jpg" alt=""></a></figure>
+                                                <figure class="image-box"><a href="~/images/gallery/3.jpg" class="lightbox-image" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="~/images/gallery/footer-thumb-3.jpg" alt=""></a></figure>
                                                 <!--Image Box-->
-                                                <figure class="image-box"><a href="images/gallery/4.jpg" class="lightbox-image" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-thumb-4.jpg" alt=""></a></figure>
+                                                <figure class="image-box"><a href="~/images/gallery/4.jpg" class="lightbox-image" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="~/images/gallery/footer-thumb-4.jpg" alt=""></a></figure>
                                                 <!--Image Box-->
-                                                <figure class="image-box"><a href="images/gallery/1.jpg" class="lightbox-image" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-thumb-5.jpg" alt=""></a></figure>
+                                                <figure class="image-box"><a href="~/images/gallery/1.jpg" class="lightbox-image" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="~/images/gallery/footer-thumb-5.jpg" alt=""></a></figure>
                                                 <!--Image Box-->
-                                                <figure class="image-box"><a href="images/gallery/2.jpg" class="lightbox-image" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="images/gallery/footer-thumb-6.jpg" alt=""></a></figure>
+                                                <figure class="image-box"><a href="~/images/gallery/2.jpg" class="lightbox-image" title="Image Title Here" data-fancybox-group="footer-gallery"><img src="~/images/gallery/footer-thumb-6.jpg" alt=""></a></figure>
                                             </div>
                                         </div>
                                     </div>
