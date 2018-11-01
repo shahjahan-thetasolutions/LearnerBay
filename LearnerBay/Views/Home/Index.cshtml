@@ -9,23 +9,23 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Rochester - Driving School HTML Template | Home Style One</title>
+    <title>LearnerBay - Driving School</title>
     <!-- Stylesheets -->
     <link href="~/css/bootstrap.css" rel="stylesheet">
     <link href="~/css/revolution-slider.css" rel="stylesheet">
     <link href="~/css/style.css" rel="stylesheet">
     <link href="~/css/jquery-ui.css" rel="stylesheet">
     <link href="~/css/site.css" rel="stylesheet" />
-   
+
     <!--Favicon-->
-    <link rel="shortcut icon" href="~/images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="~/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="~/images/leanersbay-logo.png" type="image/x-icon">
+    <link rel="icon" href="~/images/leanersbay-logo.png" type="image/x-icon">
     <!-- Responsive -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <link href="~/css/responsive.css" rel="stylesheet">
     <link href="~/css/NewSlideCss.css" rel="stylesheet" />
-
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
     <!--[if lt IE 9]><script src="~/js/respond.js"></script><![endif]-->
 </head>
@@ -38,7 +38,32 @@
 
         <!-- Main Header-->
         <header class="main-header header-style-two">
+            <div class="header-top">
+                <div class="auto-container clearfix">
+                    <!--Top Left-->
+                    <div class="top-left pull-left">
 
+                        <!--Social Icon-->
+                        <div class="social-icon">
+                            <a href="#"><span class="fa fa-facebook"></span></a>
+                            <a href="#"><span class="fa fa-twitter"></span></a>
+                            <a href="#"><span class="fa fa-pinterest"></span></a>
+                            <a href="#"><span class="fa fa-google-plus"></span></a>
+                        </div>
+
+                        <div class="contact-number"><span>CALL US NOW</span> <a href="#">: 1800 123 4567</a></div>
+                    </div>
+
+                    <!--Top Right-->
+                    <div class="top-right pull-right">
+                        <ul class="links-nav clearfix">
+
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Register</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <!--Header-Upper-->
             <div class="header-upper">
                 <div class="auto-container">
@@ -121,61 +146,69 @@
 
                             <div class="navbar-collapse collapse clearfix">
                                 <ul class="navigation clearfix">
-                                    <li class="">
-                                        <a href="/home/index">Home</a>
+                                    <li>
+                                        <a href="/home/index"> <span class="glyphicon glyphicon-home"></span> Home</a>
                                         @*<ul>
-                                            <li><a href="index.html">Homepage One</a></li>
-                                            <li><a href="index-2.html">Homepage Two</a></li>
-                                            <li><a href="index-3.html">Homepage Three</a></li>
-                                            <li class="dropdown">
-                                                <a href="#">Header Styles</a>
-                                                <ul>
-                                                    <li><a href="index.html">Header Style One</a></li>
-                                                    <li><a href="index-2.html">Header Style Two</a></li>
-                                                    <li><a href="index-3.html">Header Style Three</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>*@
-                                    </li>
-                                    <li class="">
-                                        <a href="/home/About">About Us</a>
-                                        @*<ul>
-                                            <li><a href="about.html">About Type 01</a></li>
-                                            <li><a href="about-two.html">About Type 02</a></li>
-                                        </ul>*@
-                                    </li>
-                                    <li class="dropdown">
-                                        <a href="#">INSTRUCTORS</a>
-                                        <ul>
-                                            <li><a href="/home/instructor">Instructor</a></li>
-                                            <li><a href="/home/instructorDetail">Instructor Detail</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown">
-                                        <a href="#">Pages</a>
-                                        <ul>
-                                            <li><a href="/home/features">Features</a></li>
-                                            <li><a href="/home/price">Pricing</a></li>
-                                            <li><a href="/home/errorpage">404 Page</a></li>
-                                        </ul>
+                                                <li><a href="index.html">Homepage One</a></li>
+                                                <li><a href="index-2.html">Homepage Two</a></li>
+                                                <li><a href="index-3.html">Homepage Three</a></li>
+                                                <li class="dropdown">
+                                                    <a href="#">Header Styles</a>
+                                                    <ul>
+                                                        <li><a href="index.html">Header Style One</a></li>
+                                                        <li><a href="index-2.html">Header Style Two</a></li>
+                                                        <li><a href="index-3.html">Header Style Three</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>*@
                                     </li>
                                     <li class="">
-                                        <a href="/home/galleryfullwidth">Gallery</a>
+                                        <a href="/home/About"><i class="glyphicon glyphicon-info-sign"></i> About Us</a>
                                         @*<ul>
-                                            <li><a href="/home/galleryThreeColumn">Gallery Three Column</a></li>
-                                            <li><a href="/home/galleryfullwidth">Gallery Full Width</a></li>
-                                        </ul>*@
+                                                <li><a href="about.html">About Type 01</a></li>
+                                                <li><a href="about-two.html">About Type 02</a></li>
+                                            </ul>*@
+                                    </li>
+                                    <li class="">
+                                        <a href="/home/instructor"><i class="glyphicon glyphicon-user"></i> INSTRUCTORS</a>
+                                        @*<ul>
+                                                <li><a href="/home/instructor">Instructor</a></li>
+                                                <li><a href="/home/instructorDetail">Instructor Detail</a></li>
+                                            </ul>*@
+                                    </li>
+                                    <li class="">
+                                        <a href="/home/features"><i class="glyphicon glyphicon-th-large"></i> FEASTURES</a>
+                                        @*<ul>
+                                                <li><a asp-controller="home" asp-action="Features">Features</a></li>
+                                                <li><a href="/home/price">Pricing</a></li>
+                                                <li><a href="/home/ErrorPage">404 Page</a></li>
+                                            </ul>*@
+                                    </li>
+                                    <li class="">
+                                        <a href="/home/price"><i class="glyphicon glyphicon-usd"></i> PRICE</a>
+                                        @*<ul>
+                                                <li><a asp-controller="home" asp-action="Features">Features</a></li>
+                                                <li><a href="/home/price">Pricing</a></li>
+                                                <li><a href="/home/ErrorPage">404 Page</a></li>
+                                            </ul>*@
+                                    </li>
+                                    <li class="">
+                                        <a href="/home/galleryfullwidth"><i class="glyphicon glyphicon-picture"></i> Gallery</a>
+                                        @*<ul>
+                                                <li><a href="/home/galleryThreeColumn">Gallery Three Column</a></li>
+                                                <li><a href="/home/galleryfullwidth">Gallery Full Width</a></li>
+                                            </ul>*@
                                     </li>
 
                                     <li class="">
-                                        <a href="/home/bloggrid">Blog</a>
+                                        <a href="/home/bloggrid"><i class="glyphicon glyphicon-comment"></i> Blog</a>
                                         @*<ul>
-                                            <li><a href="/home/bloggrid">Blog Grid View</a></li>
-                                            <li><a href="/home/blogclassic">Blog Classic View</a></li>
-                                            <li><a href="/home/blogsingle">Blog Single</a></li>
-                                        </ul>*@
+                                                <li><a href="/home/bloggrid">Blog Grid View</a></li>
+                                                <li><a href="/home/blogclassic">Blog Classic View</a></li>
+                                                <li><a href="/home/blogsingle">Blog Single</a></li>
+                                            </ul>*@
                                     </li>
-                                    <li><a href="/home/contact">Contact Us</a></li>
+                                    <li><a href="/home/contact"><i class="glyphicon glyphicon-phone"></i> Contact Us</a></li>
                                 </ul>
                             </div>
                         </nav>
@@ -197,7 +230,7 @@
                 <div class="auto-container clearfix">
                     <!--Logo-->
                     <div class="logo pull-left">
-                        <a href="/home/index" class="img-responsive"><img src="~/images/logo-small.png" alt="" title=""></a>
+                        <a href="/home/index" class="img-responsive"><img src="~/images/leanersbay-logo.png" alt="" title=""></a>
                     </div>
 
                     <!--Right Col-->
@@ -218,25 +251,25 @@
                                     <li class="current dropdown">
                                         <a href="/home/index">Home</a>
                                         @*<ul>
-                                            <li><a href="index.html">Homepage One</a></li>
-                                            <li><a href="index-2.html">Homepage Two</a></li>
-                                            <li><a href="index-3.html">Homepage Three</a></li>
-                                            <li class="dropdown">
-                                                <a href="#">Header Styles</a>
-                                                <ul>
-                                                    <li><a href="index.html">Header Style One</a></li>
-                                                    <li><a href="index-2.html">Header Style Two</a></li>
-                                                    <li><a href="index-3.html">Header Style Three</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>*@
+                                                <li><a href="index.html">Homepage One</a></li>
+                                                <li><a href="index-2.html">Homepage Two</a></li>
+                                                <li><a href="index-3.html">Homepage Three</a></li>
+                                                <li class="dropdown">
+                                                    <a href="#">Header Styles</a>
+                                                    <ul>
+                                                        <li><a href="index.html">Header Style One</a></li>
+                                                        <li><a href="index-2.html">Header Style Two</a></li>
+                                                        <li><a href="index-3.html">Header Style Three</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>*@
                                     </li>
                                     <li class="">
                                         <a href="/home/About">About Us</a>
                                         @*<ul>
-                                            <li><a href="about.html">About Type 01</a></li>
-                                            <li><a href="about-two.html">About Type 02</a></li>
-                                        </ul>*@
+                                                <li><a href="about.html">About Type 01</a></li>
+                                                <li><a href="about-two.html">About Type 02</a></li>
+                                            </ul>*@
                                     </li>
                                     <li class="dropdown">
                                         <a href="#">INSTRUCTORS</a>
@@ -256,18 +289,18 @@
                                     <li class="">
                                         <a href="/home/GalleryFullWidth">Gallery</a>
                                         @*<ul>
-                                            <li><a href="gallery.html">Gallery Three Column</a></li>
-                                            <li><a href="gallery-fullwidth.html">Gallery Full Width</a></li>
-                                        </ul>*@
+                                                <li><a href="gallery.html">Gallery Three Column</a></li>
+                                                <li><a href="gallery-fullwidth.html">Gallery Full Width</a></li>
+                                            </ul>*@
                                     </li>
 
                                     <li class="">
                                         <a href="/home/BlogGrid">Blog</a>
                                         @*<ul>
-                                            <li><a href="blog-grid.html">Blog Grid View</a></li>
-                                            <li><a href="blog-classic.html">Blog Classic View</a></li>
-                                            <li><a href="blog-single.html">Blog Single</a></li>
-                                        </ul>*@
+                                                <li><a href="blog-grid.html">Blog Grid View</a></li>
+                                                <li><a href="blog-classic.html">Blog Classic View</a></li>
+                                                <li><a href="blog-single.html">Blog Single</a></li>
+                                            </ul>*@
                                     </li>
                                     <li><a href="contact">Contact Us</a></li>
                                 </ul>
@@ -469,7 +502,7 @@
 
         </section>
         <!--End Main Slider-->
-      
+
         <div class="yellow_wrapper">
             <div class="px1"></div>
             <div class="yellow_inner">
@@ -907,7 +940,7 @@
             </div>
 
             <div class="text-center">
-                <a href="~/gallery-fullwidth.html" class="view-gallery">View Our Gallery &ensp;<span class="fa fa-long-arrow-right"></span></a>
+                <a href="/home/galleryfullwidth" class="view-gallery">View Our Gallery &ensp;<span class="fa fa-long-arrow-right"></span></a>
             </div>
 
         </section>
@@ -1418,7 +1451,7 @@
                                     <!--About Widget-->
                                     <div class="footer-widget about-widget">
                                         <div class="footer-logo">
-                                            <a href="index.html"><img src="~/images/logo-2.png" alt="" /></a>
+                                            <a href="index.html"><img src="~/images/leanersbay-logo.png" alt="" /></a>
                                         </div>
                                         <div class="widget-content">
                                             <div class="bold-text">Our School Specialists!</div>
@@ -1507,7 +1540,7 @@
                 <div class="auto-container">
                     <div class="row clearfix">
                         <div class="col-md-6 col-sm-12 col-xs-12">
-                            <div class="copyright">&copy; Copyright 2017 DrivingSchool | All Rights Reserved</div>
+                            <div class="copyright">&copy; Copyright 2018 LearnerBay | All Rights Reserved</div>
                         </div>
                         <div class="col-md-6 col-sm-12 col-xs-12">
                             <ul class="social-links-two">
@@ -1537,12 +1570,13 @@
     <script src="~/js/appear.js"></script>
     <script src="~/js/wow.js"></script>
     <script src="~/js/jquery-ui.js"></script>
-    
+
 
     <script src="~/js/jquery.datetimepicker.js"></script>
     <script src="~/js/script.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   
 
 
-  
 </body>
 </html>

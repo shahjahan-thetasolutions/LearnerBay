@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-    <title>Rochester - Driving School HTML Template | Home Style One</title>
+    <title>LearnerBay - Driving School </title>
 
 
     <environment include="Development">
@@ -16,8 +16,8 @@
         <link href="~/css/jquery-ui.css" rel="stylesheet">
         <link href="~/css/site.css" rel="stylesheet" />
         <!--Favicon-->
-        <link rel="shortcut icon" href="~/images/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="~/images/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="~/images/leanersbay-logo.png" type="image/x-icon">
+        <link rel="icon" href="~/images/leanersbay-logo.png" type="image/x-icon">
         <!-- Responsive -->
 
         <link href="~/css/responsive.css" rel="stylesheet">
@@ -62,15 +62,7 @@
                     <!--Top Right-->
                     <div class="top-right pull-right">
                         <ul class="links-nav clearfix">
-                            <li class="language dropdown">
-                                <a class="btn btn-default dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" href="#">EN &ensp;<span class="icon fa fa-caret-down"></span></a>
-                                <ul class="dropdown-menu style-one" aria-labelledby="dropdownMenu2">
-                                    <li><a href="#">English</a></li>
-                                    <li><a href="#">German</a></li>
-                                    <li><a href="#">Arabic</a></li>
-                                    <li><a href="#">Hindi</a></li>
-                                </ul>
-                            </li>
+                      
                             <li><a href="#">Login</a></li>
                             <li><a href="#">Register</a></li>
                         </ul>
@@ -84,7 +76,7 @@
                     <div class="clearfix">
 
                         <div class="pull-left logo-outer">
-                            <div class="logo"><a href="index.html"><img src="~/images/leanersbay-logo.png" alt="" title=""></a></div>
+                            <div class="logo"><a href="/home/index"><img src="~/images/leanersbay-logo.png" alt="" title=""></a></div>
                         </div>
 
                         <div class="nav-outer clearfix">
@@ -124,20 +116,27 @@
                                                 <li><a href="about-two.html">About Type 02</a></li>
                                             </ul>*@
                                         </li>
-                                        <li class="dropdown">
-                                            <a href="#">INSTRUCTORS</a>
-                                            <ul>
+                                        <li class="">
+                                            <a href="/home/instructor">INSTRUCTORS</a>
+                                            @*<ul>
                                                 <li><a href="/home/instructor">Instructor</a></li>
                                                 <li><a href="/home/instructorDetail">Instructor Detail</a></li>
-                                            </ul>
+                                            </ul>*@
                                         </li>
-                                        <li class="dropdown">
-                                            <a href="#">Pages</a>
-                                            <ul>
+                                        <li class="">
+                                            <a href="/home/features">FEASTURES</a>
+                                            @*<ul>
                                                 <li><a asp-controller="home" asp-action="Features">Features</a></li>
                                                 <li><a href="/home/price">Pricing</a></li>
                                                 <li><a href="/home/ErrorPage">404 Page</a></li>
-                                            </ul>
+                                            </ul>*@
+                                        </li>       <li class="">
+                                                        <a href="/home/price">PRICE</a>
+                                            @*<ul>
+                                                <li><a asp-controller="home" asp-action="Features">Features</a></li>
+                                                <li><a href="/home/price">Pricing</a></li>
+                                                <li><a href="/home/ErrorPage">404 Page</a></li>
+                                            </ul>*@
                                         </li>
                                         <li class="">
                                             <a href="/home/GalleryFullWidth">Gallery</a>
@@ -170,7 +169,7 @@
                 <div class="auto-container clearfix">
                     <!--Logo-->
                     <div class="logo pull-left">
-                        <a href="index.html" class="img-responsive"><img src="~/images/logo-small.png" alt="" title=""></a>
+                        <a href="index.html" class="img-responsive"><img src="~/images/leanersbay-logo.png" alt="" title=""></a>
                     </div>
 
                     <!--Right Col-->
@@ -395,7 +394,7 @@
                 <div class="auto-container">
                     <div class="row clearfix">
                         <div class="col-md-6 col-sm-12 col-xs-12">
-                            <div class="copyright">&copy; Copyright 2017 DrivingSchool | All Rights Reserved</div>
+                            <div class="copyright">&copy; Copyright 2018 LearnerBay| All Rights Reserved</div>
                         </div>
                         <div class="col-md-6 col-sm-12 col-xs-12">
                             <ul class="social-links-two">
