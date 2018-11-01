@@ -21,7 +21,7 @@
         <!-- Responsive -->
 
         <link href="~/css/responsive.css" rel="stylesheet">
-
+        <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
 
 
@@ -94,7 +94,7 @@
                                 <div class="navbar-collapse collapse clearfix">
                                     <ul class="navigation clearfix">
                                         <li class="">
-                                            <a href="/home/index">Home</a>
+                                            <a href="/home/index"><span class="glyphicon glyphicon-home"></span> Home</a>
                                             @*<ul>
                                                 <li><a href="index.html">Homepage One</a></li>
                                                 <li><a href="index-2.html">Homepage Two</a></li>
@@ -110,28 +110,28 @@
                                             </ul>*@
                                         </li>
                                         <li class="">
-                                            <a href="/home/About">About Us</a>
+                                            <a href="/home/About"><i class="glyphicon glyphicon-info-sign"></i> About Us</a>
                                             @*<ul>
                                                 <li><a href="about.html">About Type 01</a></li>
                                                 <li><a href="about-two.html">About Type 02</a></li>
                                             </ul>*@
                                         </li>
                                         <li class="">
-                                            <a href="/home/instructor">INSTRUCTORS</a>
+                                            <a href="/home/instructor"><i class="glyphicon glyphicon-user"></i> INSTRUCTORS</a>
                                             @*<ul>
                                                 <li><a href="/home/instructor">Instructor</a></li>
                                                 <li><a href="/home/instructorDetail">Instructor Detail</a></li>
                                             </ul>*@
                                         </li>
                                         <li class="">
-                                            <a href="/home/features">FEASTURES</a>
+                                            <a href="/home/features"><i class="glyphicon glyphicon-th-large"></i> FEASTURES</a>
                                             @*<ul>
                                                 <li><a asp-controller="home" asp-action="Features">Features</a></li>
                                                 <li><a href="/home/price">Pricing</a></li>
                                                 <li><a href="/home/ErrorPage">404 Page</a></li>
                                             </ul>*@
                                         </li>       <li class="">
-                                                        <a href="/home/price">PRICE</a>
+                                                        <a href="/home/price"><i class="glyphicon glyphicon-usd"></i> PRICE</a>
                                             @*<ul>
                                                 <li><a asp-controller="home" asp-action="Features">Features</a></li>
                                                 <li><a href="/home/price">Pricing</a></li>
@@ -139,7 +139,7 @@
                                             </ul>*@
                                         </li>
                                         <li class="">
-                                            <a href="/home/GalleryFullWidth">Gallery</a>
+                                            <a href="/home/GalleryFullWidth"><i class="glyphicon glyphicon-picture"></i> Gallery</a>
                                             @*<ul>
                                                 <li><a href="/home/GalleryThreeColumn">Gallery Three Column</a></li>
                                                 <li><a href="/home/GalleryFullWidth">Gallery Full Width</a></li>
@@ -147,14 +147,14 @@
                                         </li>
 
                                         <li class="">
-                                            <a href="/home/blogGrid">Blog</a>
+                                            <a href="/home/blogGrid"><i class="glyphicon glyphicon-comment"></i> Blog</a>
                                             @*<ul>
                                                 <li><a href="blogGrid">Blog Grid View</a></li>
                                                 <li><a href="blogClassic">Blog Classic View</a></li>
                                                 <li><a href="blogSingle">Blog Single</a></li>
                                             </ul>*@
                                         </li>
-                                        <li><a href="/home/contact">Contact Us</a></li>
+                                        <li><a href="/home/contact"><i class="glyphicon glyphicon-phone"></i> Contact Us</a></li>
                                     </ul>
                                 </div>
                             </nav>
@@ -164,12 +164,13 @@
                 </div>
             </div>
             <!--End Header Upper-->
+            <div class="clearfix"></div>
             <!--Sticky Header-->
             <div class="sticky-header">
                 <div class="auto-container clearfix">
                     <!--Logo-->
                     <div class="logo pull-left">
-                        <a href="index.html" class="img-responsive"><img src="~/images/leanersbay-logo.png" alt="" title=""></a>
+                        <a href="/home/index" class="img-responsive"><img src="~/images/leanersbay-logo.png" alt="" title=""></a>
                     </div>
 
                     <!--Right Col-->
@@ -187,61 +188,38 @@
 
                             <div class="navbar-collapse collapse clearfix">
                                 <ul class="navigation clearfix">
-                                    <li class="dropdown">
-                                        <a href="/home/index">Home</a>
-                                        @*<ul>
-                                            <li><a href="index.html">Homepage One</a></li>
-                                            <li><a href="index-2.html">Homepage Two</a></li>
-                                            <li><a href="index-3.html">Homepage Three</a></li>
-                                            <li class="dropdown">
-                                                <a href="#">Header Styles</a>
-                                                <ul>
-                                                    <li><a href="index.html">Header Style One</a></li>
-                                                    <li><a href="index-2.html">Header Style Two</a></li>
-                                                    <li><a href="index-3.html">Header Style Three</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>*@
+                                    <li class="">
+                                        <a href="/home/index"><span class="glyphicon glyphicon-home"></span> Home</a>
+
                                     </li>
-                                    <li class="current dropdown">
-                                        <a href="#">About Us</a>
-                                        <ul>
-                                            <li><a href="/home/about">About Type 01</a></li>
-                                            @*<li><a href="about-two.html">About Type 02</a></li>*@
-                                        </ul>
+                                    <li class="">
+                                        <a href="/home/About"><i class="glyphicon glyphicon-info-sign"></i> About Us</a>
+
                                     </li>
                                     <li class="dropdown">
-                                        <a href="#">INSTRUCTORS</a>
-                                        <ul>
-                                            <li><a href="/home/instructor">Instructor</a></li>
-                                            <li><a href="/home/instructorDetail">Instructor Detail</a></li>
-                                        </ul>
+                                        <a href="/home/instructor"><i class="glyphicon glyphicon-user"></i> INSTRUCTORS</a>
+
                                     </li>
-                                    <li class="dropdown">
-                                        <a href="#">Pages</a>
-                                        <ul>
-                                            <li><a href="/home/features">Features</a></li>
-                                            <li><a href="/home/price">Pricing</a></li>
-                                            <li><a href="/home/errorpage">404 Page</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown">
-                                        <a href="#">Gallery</a>
-                                        <ul>
-                                            <li><a href="/home/gallery">Gallery Three Column</a></li>
-                                            <li><a href="/home/galleryfullwidth">Gallery Full Width</a></li>
-                                        </ul>
+                                    <li class="">
+                                        <a href="/home/features"><i class="glyphicon glyphicon-th-large"></i>FEATURES</a>
+
                                     </li>
 
-                                    <li class="dropdown">
-                                        <a href="#">Blog</a>
-                                        <ul>
-                                            <li><a href="/home/blogGrid">Blog Grid View</a></li>
-                                            @*<li><a href="/home/blogClassic">Blog Classic View</a></li>
-                                            <li><a href="/home/blogSingle">Blog Single</a></li>*@
-                                        </ul>
+                                    <li class="">
+                                        <a href="/home/price"><i class="glyphicon glyphicon-usd"></i> PRICE</a>
+
                                     </li>
-                                    <li><a href="/home/contact">Contact Us</a></li>
+                                    <li class="">
+                                        <a href="/home/GalleryFullWidth"><i class="glyphicon glyphicon-picture"></i> Gallery</a>
+
+                                    </li>
+                                    <li class="">
+                                        <a href="/home/BlogGrid"><i class="glyphicon glyphicon-comment"></i> Blog</a>
+
+                                    </li>
+
+                                    <li><a href="/home/contact"><i class="glyphicon glyphicon-phone"></i> Contact Us</a></li>
+                               
                                 </ul>
                             </div>
                         </nav><!-- Main Menu End-->
@@ -427,6 +405,7 @@
         <script src="~/js/validate.js"></script>
 
         <script src="~/js/script.js"></script>
+        <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
         <!--[if lt IE 9]><script src="~/js/respond.js"></script><![endif]-->
 
